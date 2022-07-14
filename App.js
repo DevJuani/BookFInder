@@ -1,21 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View, TextInput } from 'react-native';
+import { AddBook } from './components/AddBook';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Primer prueba de mi app con Android Studio</Text>
-      <Text>Hola mundo</Text>
-      <StatusBar style="auto" />
+      <AddBook />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  screen: {
+    padding: 10,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#CBEFB6',
   },
 });
