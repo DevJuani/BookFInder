@@ -3,20 +3,18 @@ import { AddBook } from './components/AddBook';
 import { NavBar } from './components/navbar/NavBar';
 import Colors from './constants/Colors';
 
-import { isLoading, useFonts } from 'expo-font';
-import AppLoading from 'expo';
+import { useFonts } from 'expo-font';
+import AppLoading from 'expo-app-loading';
 
 
 
 export default function App() {
 
     const [loaded] = useFonts({
-      "Inter-Regular": require("./assets/fonts/Inter-Regular.ttf"),
-      "Inter-Bold": require("./assets/fonts/Inter-Bold.ttf"),
+      InterRegular: require("./assets/fonts/InterRegular.ttf"),
+      InterBold: require("./assets/fonts/InterBold.ttf"),
     });
-    if(!loaded) {
-      return <AppLoading />;
-    }
+    if (!loaded) return <AppLoading />; 
 
   return (
     <View style={styles.container}>

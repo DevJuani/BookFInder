@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
         color: Colors.letterPrincipal,
         fontSize: 30,
         fontWeight: 'bold',
+        fontFamily: 'InterBold',
     },
     backbutton: {
         width: '80%',

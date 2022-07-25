@@ -111,11 +111,13 @@ export function AddBook() {
             width: 300,
             margin: 10,
             borderRadius: 10,
+            fontFamily: 'InterBold',
         },
         title: {
             width: '80%',
             margin: 10,
             borderRadius: 10,
+            fontFamily: "InterRegular",
         },
         modal: {
             flex: 1,
