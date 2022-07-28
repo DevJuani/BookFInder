@@ -1,10 +1,12 @@
 import { Button, StyleSheet, Text, View, TextInput } from 'react-native';
 import { AddBook } from './components/AddBook';
-import { NavBar } from './components/navbar/NavBar';
 import Colors from './constants/Colors';
 
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
+
+
+import Tabs from './navigation/tabs';
 
 
 
@@ -19,7 +21,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <AddBook />
-      <NavBar />
+        <Tabs />
     </View>
   );
 }

@@ -1,6 +1,6 @@
 import {View , Text, TextInput, Button, StyleSheet, FlatList, TouchableOpacity, Modal} from 'react-native';
 import { useState } from 'react';
-import Profile from './pages/Profile';
+import Profile from './pages/ProfileScreen';
 import Colors from '../constants/Colors';
 
 export function AddBook() {

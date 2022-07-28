@@ -1,22 +1,16 @@
 import React from "react";
-import {View, Text, StyleSheet, Button, TextInput} from "react-native";
+import {View, Text, StyleSheet, Button} from "react-native";
 import Colors from "../../constants/Colors";
-import { AddBook } from "../AddBook";
 
-export default function Profile(){
-    const [back, setBack] = React.useState(false);
-    function onHandlerBack () {
-        setBack(true);
-    }
-    if(back) return <AddBook />
-
-    return(
+const SearchScreen = ({navigation}) => {
+    return (
         <View style={styles.background}>
-            <Text style={styles.text}>Profile</Text>
-            <Button style={styles.backbutton} title="Back" onPress={()=> onHandlerBack()} />
+            <Text style={styles.text}>Find</Text>
+            <Button style={styles.backbutton} title="Click Here" onPress={()=> alert('Button clicked!')} />
         </View>
     );
 }
+export default SearchScreen;
 
 const styles = StyleSheet.create({
     background: {
