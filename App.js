@@ -7,6 +7,7 @@ import AppLoading from 'expo-app-loading';
 
 
 import Tabs from './navigation/tabs';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
 
 
 
@@ -19,10 +20,9 @@ export default function App() {
     if (!loaded) return <AppLoading />; 
 
   return (
-    <View style={styles.container}>
-      <AddBook />
-        <Tabs />
-    </View>
+    <>
+      <Tabs />
+    </>
   );
 }
 

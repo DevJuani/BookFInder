@@ -1,12 +1,17 @@
 import React from "react";
-import {View, Text, StyleSheet, Button} from "react-native";
+import {View, Text, StyleSheet, Button, TouchableOpacity, ScrollView, TouchableHighlight} from "react-native";
 import Colors from "../../constants/Colors";
 
-const SettingsScreen = ({navigation}) => {
+const SettingsScreen = ({navigation}, props) => {
     return (
         <View style={styles.background}>
-            <Text style={styles.text}>Settings</Text>
-            <Button style={styles.backbutton} title="Click Here" onPress={()=> alert('Button clicked!')} />
+            <ScrollView>
+            
+                    <View>
+                        <Text style={styles.text}>Settings</Text>
+                    </View>
+                
+            </ScrollView>
         </View>
     );
 }
@@ -16,8 +21,7 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         backgroundColor: Colors.primary,
-        alignItems: 'center',
-        justifyContent: 'center',
+        padding: 10,
     },
     text: {
         color: Colors.letterPrincipal,

@@ -1,12 +1,22 @@
 import React from "react";
-import {View, Text, StyleSheet, Button} from "react-native";
+import {View, Text, StyleSheet, Button, TouchableOpacity, ScrollView, TouchableHighlight, TextInput} from "react-native";
 import Colors from "../../constants/Colors";
 
 const PostScreen = ({navigation}) => {
     return (
         <View style={styles.background}>
-            <Text style={styles.text}>Post</Text>
-            <Button style={styles.backbutton} title="Click Here" onPress={()=> alert('Button clicked!')} />
+            <View styles={styles.container}>
+                <Text style={styles.text}>Title</Text>
+                <TextInput style={styles.input} placeholder="Title" />
+                <Text style={styles.text}>Description</Text>
+                <TextInput style={styles.input} placeholder="Description" />
+                <Text style={styles.text}>Author</Text>
+                <TextInput style={styles.input} placeholder="Author" />
+                <Button style={styles.backbutton} title="Click Here" onPress={()=> navigation.navigate("PostScreen")} />
+
+
+
+            </View>
         </View>
     );
 }
