@@ -6,7 +6,8 @@ const HomeScreen = ({navigation}) => {
     return (
         <View style={styles.background}>
             <Text style={styles.text}>Home</Text>
-            <Button style={styles.backbutton} title="Click Here" onPress={()=> navigation.navigate("PostScreen")} />
+            <Button style={styles.backbutton} title="Hello Page" onPress={()=> 
+                navigation.navigate("HelloPage")} />
         </View>
     );
 }

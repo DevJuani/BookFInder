@@ -36,7 +36,6 @@ const CustomTabBarButton = ({children, onPress}) => (
 
 const Tabs = () => {
     return (
-        <NavigationContainer>
             <Tab.Navigator
             screenOptions={{
                 tabBarShowLabel: false,
@@ -151,7 +150,6 @@ const Tabs = () => {
                     ),
                 }}/>
             </Tab.Navigator>
-        </NavigationContainer>
     );
 };
 export default Tabs

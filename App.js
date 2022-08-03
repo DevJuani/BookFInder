@@ -8,7 +8,7 @@ import AppLoading from 'expo-app-loading';
 
 import Tabs from './navigation/tabs';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
-
+import HelloPage from './navigation/HelloPage';
 
 
 export default function App() {
@@ -21,7 +21,10 @@ export default function App() {
 
   return (
     <>
-      <Tabs />
+      <NavigationContainer>
+        <HelloPage/>
+        <Tabs />
+      </NavigationContainer>
     </>
   );
 }
